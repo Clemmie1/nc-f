@@ -1,0 +1,39 @@
+{
+  "name": "neuronchat",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.26.0",
+    "@kangc/v-md-editor": "^2.3.18",
+    "@nguyenshort/vue3-mitt": "^0.0.4",
+    "@primevue/themes": "^4.2.4",
+    "@uivjs/vue-markdown-preview": "^1.0.5",
+    "@vueuse/core": "^12.2.0",
+    "axios": "^1.7.9",
+    "highlight.js": "^11.11.0",
+    "js-cookie": "^3.0.5",
+    "lucide-vue-next": "^0.468.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.4",
+    "uuid": "^10.0.0",
+    "vue": "^3.5.13",
+    "vue-i18n": "^11.0.1",
+    "vue-router": "^4.5.0",
+    "vue3-markdown-it": "^1.0.10",
+    "vue3-spinners": "^1.2.2",
+    "vue3-toastify": "^0.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^6.0.1"
+  }
+}
