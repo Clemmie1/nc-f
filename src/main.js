@@ -15,13 +15,11 @@ import en from './lang/en.json';
 
 import ConfirmationService from 'primevue/confirmationservice';
 
-// Глобальная переменная для хранения переводов
 const translations = { ru, en };
 
-// Создание экземпляра i18n
 const i18n = createI18n({
-    locale: 'en', // Выберите язык здесь
-    messages: translations, // Глобальная переменная с переводами
+    locale: 'en',
+    messages: translations
 });
 
 
