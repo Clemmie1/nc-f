@@ -35,7 +35,7 @@ const clickTo = () => {
       </button>
 
     </div>
-    <div class="">
+    <!-- <div class="">
       <Select
           v-model="selectedCity"
           :options="cities"
@@ -51,7 +51,7 @@ const clickTo = () => {
             }
           '
       />
-    </div>
+    </div> -->
     <div class="no-draggable absolute bottom-0 right-0 top-0 mr-3 inline-flex items-center justify-center">
           <span class="flex" data-state="closed">
              <button class="h-10 rounded-lg px-2 text-token-text-secondary focus-visible:outline-0 disabled:text-token-text-quaternary focus-visible:bg-token-sidebar-surface-secondary enabled:hover:bg-token-sidebar-surface-secondary">
