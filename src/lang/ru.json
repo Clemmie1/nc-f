@@ -1,5 +1,73 @@
 {
-  "Auth": {
-    "": ""
+  "nc_footer_text": "Neuron Chat может совершать ошибки. Мы рекомендуем проверять важную информацию.",
+
+  "sign_in": "Войти",
+  "button_sign_in": "ВОЙТИ",
+  "dont_have_an_account_yet": "Еще нет аккаунта?",
+  "register_here": "Зарегистрируйтесь здесь",
+  "email": "Электронная почта",
+  "password": "Пароль",
+  "forgotpwd": "Сбросить пароль",
+  "registration": "Регистрация",
+  "already_have_an_account": "Уже есть аккаунт?",
+  "login_here": "Войдите здесь",
+  "sign_up": "Зарегистрироваться",
+  "button_sign_up": "ЗАРЕГИСТРИРОВАТЬСЯ",
+  "send_reset_email": "Отправить письмо для сброса",
+  "password_reset_notification_sent": "Уведомление о сбросе пароля отправлено",
+  "forgotpwd_1": "Уведомление о сбросе пароля будет отправлено на резервный адрес электронной почты, связанный с именем пользователя <b>{email}</b>.",
+  "forgotpwd_2": "Если вы не получили письмо для сброса пароля, проверьте папку со спамом. Вы также можете попробовать снова через 10 минут.",
+  "retur_to_login_page": "Вернуться на страницу входа",
+  "login_2fa_title": "Двухфакторная аутентификация",
+  "login_2fa_sent": "Введите 6-значный код, отправленный на вашу электронную почту <b>{email}</b>.",
+  "2fa_sending": "ОТПРАВКА...",
+  "2fa_resend_via": "ПОВТОРНО ОТПРАВИТЬ ЧЕРЕЗ ",
+  "2fa_send_resend": "ОТПРАВИТЬ ПОВТОРНО",
+
+  "newChat": {
+    "help": "Чем могу помочь?"
+  },
+
+  "tooltip": {
+    "open_sidebar": "Открыть боковую панель",
+    "close_sidebar": "Закрыть боковую панель",
+    "new_chat": "Новый чат",
+    "search_in_chat": "Поиск в чате",
+    "edit_message": "Редактировать сообщение",
+    "new_answer": "Новый ответ",
+    "copy": "Копировать",
+    "good_answer": "Хороший ответ",
+    "bad_answer": "Плохой ответ"
+  },
+
+  "button": {
+    "button_cancel": "Отмена",
+    "button_send": "Отправить"
+  },
+
+  "drawer_menu_option": {
+    "rename_chat": "Переименовать",
+    "delete_chat": "Удалить",
+    "input_search_chat_placeholder": "Поиск в чатах...",
+    "chats_not_found": "Чаты не найдены."
+  },
+
+  "Chat": {
+    "textarea_placeholder": "Введите ваше сообщение..."
+  },
+
+  "ConfirmDialog": {
+    "delete_chat": {
+      "header": "Удалить чат?",
+      "message": "Это удалит - {chatTitle}",
+      "button_cancel": "Отмена",
+      "button_delete": "Удалить"
+    },
+    "rename_chat": {
+      "header": "Переименовать чат",
+      "input_placeholder": "Введите новое имя",
+      "button_cancel": "Отмена",
+      "button_save": "Сохранить"
+    }
   }
 }
