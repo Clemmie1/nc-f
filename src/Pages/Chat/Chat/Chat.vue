@@ -587,21 +587,6 @@ onUnmounted(() => emitter.off('addChatContents'))
 																							class="group flex items-center justify-center whitespace-nowrap transition ease-in-out disabled:cursor-not-allowed border border-transparent focus-visible:outline-offset-4 focus-visible:outline focus-visible:outline-1 focus-visible:outline-volcanic-700 group/icon-button p-0 h-7 w-7 rounded hover:bg-[#2e2e2e]"
 																							type="button"
 																						>
-																							<speak
-																								xmlns="http://www.w3.org/2001/10/synthesis"
-																								xmlns:mstts="http://www.w3.org/2001/mstts"
-																								xmlns:emo="http://www.w3.org/2009/10/emotionml"
-																								version="1.0"
-																								xml:lang="en-US"
-																							>
-																								<voice
-																									name="ru-RU-SvetlanaNeural"
-																								>
-																									<prosody rate="0%" pitch="0%"
-																										>Привет</prosody
-																									>
-																								</voice>
-																							</speak>
 																							<div class="flex items-center">
 																								<ThumbsDown
 																									color="#b4b4b4"

@@ -1,18 +1,16 @@
 <script setup>
-import {onMounted, onUnmounted, ref, watch} from 'vue';
-import InputText from 'primevue/inputtext';
-import Password from 'primevue/password';
+import { useEmitter } from '@nguyenshort/vue3-mitt';
+import Cookies from 'js-cookie';
 import Button from 'primevue/button';
-import Message from 'primevue/message';
-import {useEmitter} from '@nguyenshort/vue3-mitt'
 import Dialog from 'primevue/dialog';
 import InputOtp from 'primevue/inputotp';
-import Cookies from 'js-cookie';
+import InputText from 'primevue/inputtext';
+import Message from 'primevue/message';
+import Password from 'primevue/password';
+import { onMounted, onUnmounted, ref, watch } from 'vue';
 
-import {toast} from "vue3-toastify";
-import "vue3-toastify/dist/index.css";
 import axios from "axios";
-import router from "../../router/index.js";
+import "vue3-toastify/dist/index.css";
 
 
 const emitter = useEmitter()
@@ -54,7 +52,7 @@ const handleLogin = async () => {
         startTimer(120);
         twoFactorModal.value = true;
       } else if (response.data.type === "Login") {
-         await redirectToConsole(response.data.token.accessToken, response.data.token.refreshToken)
+         await redirectToConsole(response.data.token.accessToken, response.data.user, response.data.token.refreshToken)
       }
     }
 
@@ -152,13 +150,13 @@ const startTimer = (seconds) => {
   }, 1000);
 };
 
-const redirectToConsole = async (authToken, refreshToken) => {
+const redirectToConsole = async (authToken, userData, refreshToken) => {
   // localStorage.setItem('token', authToken);
   // localStorage.setItem('refreshToken', refreshToken);
   Cookies.set('token', authToken);
   Cookies.set('refreshToken', refreshToken);
+  Cookies.set('userData', JSON.parse(userData));
   twoFactorModal.value = false;
-
   window.location.replace("/");
   // await router.push({name: 'NewChat'});
 }
